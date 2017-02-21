@@ -15,7 +15,7 @@ apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
 jar {
-	baseName = 'projectATest'
+	baseName = 'csvMailer'
 	version = '0.0.1-SNAPSHOT'
 }
 

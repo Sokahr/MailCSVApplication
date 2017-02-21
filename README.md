@@ -2,19 +2,27 @@
 
 Build with Spring-Boot.
 
+###Build
+With Gradle 
+just run gradle build
+
+or execute the gradle-wrapper
+
+`gradlew build`
+
 ###How to run:
+`java -jar ./build/libs/csvMailer-0.0.1-SNAPSHOT.jar resource=./example.csv`
 
-`java -jar ./projectATest-0.0.1-SNAPSHOT.jar resource=./TestAufgabe.csv`
-
-Commandline Parameter
+####Commandline Parameter
  
 _resource_ : Defines the CSV-File which contains email,firstname,lastname separated with ; and " as quotes
 
 ###Change default configuration
+Just put a __application.properties__ File with the following keys in it.
 
-corePoolSize = The corePoolSize for multithreded taskExecution.
+_corePoolSize_ = The corePoolSize for multithreded taskExecution.
 
-maxPoolSize = The maxPoolSize for multithreded taskExecution
+_maxPoolSize_ = The maxPoolSize for multithreded taskExecution
 
-sendMailChunkSize = The chunk size for one sendMail Job
+_sendMailChunkSize_ = The chunk size for one sendMail Job
 
